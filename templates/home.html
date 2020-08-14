@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tracking</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/home.css') }}">
+
+  </head>
+  <body>
+    <div class="row">
+        <div class="column">
+          <img id = "0" src="">
+        </div>
+        <div class="column">
+          <img id = "1" src="">
+        </div>
+        <div class="column">
+          <img id = "2" src="">
+        </div>
+        <div class="column">
+          <img id = "3" src="">
+        </div>
+        <div class="column">
+          <img id = "4" src="">
+        </div>
+      </div>
+
+      <script>
+        var srcs = '{{urls}}'.split("|");
+        console.log(srcs);
+        for(var i = 0; i < srcs.length; i++){
+          console.log(i.toString());
+          $("#" + i.toString()).attr("src", srcs[i]);
+        }
+      </script>
+  </body>
+</html>
