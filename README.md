@@ -3,4 +3,4 @@ Uses Apache Spark and Pyspark ML to implement the Spark ALS factorization algori
 Hardware: 4 cores, 4gb spark driver memory, parallel computing
 Benchmarks: average time to calculate: 4.5 mins, average root mean square error: 0.78
 
-Images for the movie recommendations are then scraped from google images using a headless selenium chrome driver and displayed on a flask web app. 
+Images for the movie recommendations are then scraped from google images using a headless selenium chrome driver and displayed on a flask web app. Redirect links to be added after scraping google search results. 
